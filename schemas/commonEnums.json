@@ -41,6 +41,7 @@
 				"M",
 				"F"
 			],
+			"type": "string",
 			"enumTransCodes":[
 				"enum.gender.M",
 				"enum.gender.F"

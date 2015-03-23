@@ -11,11 +11,8 @@
 				"accountingDate": {
 					"title": "Datum zauctovania",
 					"transCode": "schema.payments.baseData.accountingDate",
-					"type": "string",
-					"required": true,
-					"render": {
-						"component": "psui-datepicker"
-					}
+					"type": "date",
+					"required": true
 				},
 				"clientName": {
 					"title": "Ref. klient",
@@ -26,12 +23,19 @@
 				"member": {
 					"title": "Člen",
 					"transCode": "schema.fees.baseData.member",
-					"type": "string",
+					"type": "object",
 					"required": true,
 					"objectLink": {
 						"registry": "people",
 						"surName": "baseData.surName.v",
 						"name": "baseData.name.v"
+					},
+					"objectLink2": {
+						"schema": "uri://registries/people#views/fullperson/view",
+						"fields":{
+							"surName": "baseData.surName",
+							"name": "baseData.name"
+						}
 					}
 				},
 				"clientRef": {

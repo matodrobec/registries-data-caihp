@@ -7,13 +7,13 @@
 			"type":"String"
 		},
 		"date":{
-			"type":"String",
+			"type":"date",
 			"render": {
 				"component": "psui-datepicker"
 			}
 		},
 		"year":{
-			"type":"String"
+			"type":"string"
 		},
 		"email":{
 			"type":"object",

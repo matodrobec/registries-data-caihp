@@ -64,8 +64,7 @@
 					"title": "Fotografia",
 					"transCode": "schema.people.photoInfo.photo",
 					"type": "string",
-					"render": {
-						"component": "psui-uploadable-image",
+					"uploadableImage": {
 						"height": 244,
 						"width": 205
 					}
@@ -218,9 +217,12 @@
 				"clubName": {
 					"title": "Názov klubu",
 					"transCode": "schema.people.hockeyPlayerInfo.clubName",
-					"objectLink": {
-						"registry": "organizations",
-						"name": "baseData.name.v"
+					"type": "object",
+					"objectLink2": {
+						"schema": "uri://registries/organization#views/organization/view",
+						"fields":{
+							"name": "baseData.name"
+						}
 					}
 				},
 				"positionName": {
