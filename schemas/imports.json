@@ -20,7 +20,7 @@
 				"type": {
 					"title": "Fotografia",
 					"transCode": "schema.imports.type",
-					"type": " string",
+					"type": "string",
 					"enum": [
 						"Bankový výpis - CSV"
 					],
